@@ -8,6 +8,7 @@ on:
 
 jobs:
   docker-publish:
+    if: {{ false }}
     name: 'Build and publish Docker image'
     runs-on: ubuntu-latest
     steps:
