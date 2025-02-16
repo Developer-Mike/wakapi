@@ -829,7 +829,7 @@
                 {{ if not .User.HasActiveSubscription }}
                 <span class="font-semibold text-gray-300">How it works</span>
                 <span class="block text-sm text-gray-600">
-                    Without a subscription, your coding activity older than {{ .DataRetentionMonths }} months will get deleted by a routine that is run every day.
+                    Without a subscription, your coding activity older than {{ .DataRetentionMonths }} months will get deleted by a routine that is run the first day of every month.
                     If you do have an active subscription at the time of checking, your data is kept.<br>
                     In other words, for every point in time <span class="text-xs font-mono">X</span>, where you do not currently have an active subscription, all data older than <span class="text-xs font-mono">X - {{ .DataRetentionMonths }}</span> months gets dropped.
                 </span>

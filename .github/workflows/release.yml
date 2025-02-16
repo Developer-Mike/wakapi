@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    if: {{ false }}
+    if: false
     name: 'Build, package and release to GitHub'
     strategy:
       fail-fast: false
