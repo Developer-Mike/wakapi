@@ -19,6 +19,9 @@ WORKDIR /app
 # Copy binary from build stage
 COPY --from=builder /app/wakapi /app/wakapi
 
+# Copy config file
+COPY config.yml /app/config.yml
+
 # Expose default port (adjust according to your config.yml)
 EXPOSE 3000
 
